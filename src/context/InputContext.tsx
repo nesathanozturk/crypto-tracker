@@ -14,3 +14,5 @@ function InputProvider({ children }: IChildren) {
     </InputContext.Provider>
   );
 }
+
+export { InputProvider };
