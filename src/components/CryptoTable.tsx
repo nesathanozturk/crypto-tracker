@@ -10,7 +10,7 @@ const CryptoTable: React.FC<ICryptoData> = ({ cryptoData }) => {
             <th>Coin</th>
             <th>Symbol</th>
             <th>Price</th>
-            <th>Volume</th>
+            <th>Total Volume</th>
             <th>Change(24h)</th>
             <th>Market Cap</th>
           </tr>
