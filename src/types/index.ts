@@ -15,3 +15,12 @@ export interface ICryptoData {
 export interface ICryptoProps {
   crypto: ICrypto;
 }
+
+export interface IContext {
+  term: string;
+  setTerm: (term: string) => void;
+}
+
+export interface IChildren {
+  children: React.ReactNode;
+}
