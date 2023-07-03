@@ -1,12 +1,14 @@
-import { IData } from "@/types";
+import { ICryptoData } from "@/types";
 import Crypto from "./Crypto";
 
-const CryptoTable: React.FC<IData> = ({ data }) => {
+const CryptoTable: React.FC<ICryptoData> = ({ cryptoData }) => {
   return (
     <div className="overflow-x-auto">
       <table className="table">
         <thead>
           <tr>
+            <th>Coin</th>
+            <th>Symbol</th>
             <th>Price</th>
             <th>Volume</th>
             <th>Change(24h)</th>
@@ -14,8 +16,8 @@ const CryptoTable: React.FC<IData> = ({ data }) => {
           </tr>
         </thead>
         <tbody>
-          {data?.map((crypto) => (
-            <Crypto key={crypto.id} crypto={crypto} />
+          {cryptoData?.map((crypto) => (
+            <Crypto key={crypto?.id} crypto={crypto} />
           ))}
         </tbody>
       </table>

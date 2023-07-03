@@ -5,10 +5,13 @@ export interface ICrypto {
   image: string;
   current_price: number;
   total_volume: number;
-  price_change_24h: number;
+  price_change_percentage_24h: number;
   market_cap: number;
 }
 
-export interface IData {
-  data: ICrypto[];
+export interface ICryptoData {
+  cryptoData: ICrypto[];
+}
+export interface ICryptoProps {
+  crypto: ICrypto;
 }

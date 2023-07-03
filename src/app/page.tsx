@@ -7,7 +7,7 @@ const Home = async () => {
   return (
     <>
       <h1>Crypto Tracker</h1>
-      <CryptoTable data={data} />
+      <CryptoTable cryptoData={data} />
     </>
   );
 };
