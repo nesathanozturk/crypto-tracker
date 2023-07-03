@@ -5,10 +5,10 @@ const Home = async () => {
   const data = await fetchApi();
 
   return (
-    <>
-      <h1>Crypto Tracker</h1>
+    <main className="p-5">
+      <h1 className="text-center font-semibold text-2xl">Crypto Tracker</h1>
       <CryptoTable cryptoData={data} />
-    </>
+    </main>
   );
 };
 
