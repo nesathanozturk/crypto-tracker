@@ -1,12 +1,13 @@
 import { fetchApi } from "@/api";
 import CryptoTable from "@/components/CryptoTable";
+import Header from "@/components/Header";
 
 const Home = async () => {
   const data = await fetchApi();
 
   return (
     <main className="p-5">
-      <h1 className="text-center font-semibold text-2xl">Crypto Tracker</h1>
+      <Header />
       <CryptoTable cryptoData={data} />
     </main>
   );
