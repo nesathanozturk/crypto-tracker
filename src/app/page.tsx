@@ -7,7 +7,7 @@ const Home = async () => {
   const data = await fetchApi();
 
   return (
-    <main className="p-5">
+    <main className="py-5">
       <Header />
       <CryptoTable cryptoData={data} />
       <Footer />
