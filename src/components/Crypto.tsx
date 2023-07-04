@@ -12,8 +12,8 @@ const Crypto: React.FC<ICryptoProps> = ({ crypto }) => {
           <Image
             src={crypto?.image}
             alt={crypto?.name}
-            width={35}
-            height={35}
+            width={30}
+            height={30}
           />
           {crypto?.name}
         </td>
