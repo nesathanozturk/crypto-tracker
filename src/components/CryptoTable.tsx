@@ -20,7 +20,7 @@ const CryptoTable: React.FC<ICryptoData> = ({ cryptoData }) => {
   return (
     <>
       {isCoinFound ? (
-        <h1 className="py-10 text- md:text-2xl text-gray-400 text-center underline">
+        <h1 className="pb-10 text-xl md:text-2xl text-gray-400 text-center underline">
           Coin you are looking for is not found!
         </h1>
       ) : (
