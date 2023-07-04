@@ -7,7 +7,7 @@ const Crypto: React.FC<ICryptoProps> = ({ crypto }) => {
 
   return (
     <tr className="hover cursor-pointer">
-      <td className="flex items-center gap-3">
+      <td className="flex flex-col items-center gap-3">
         <Image src={crypto?.image} alt={crypto?.name} width={30} height={30} />
         {crypto?.name}
       </td>
